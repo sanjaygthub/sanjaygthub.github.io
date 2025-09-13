@@ -6,144 +6,87 @@
 <title>Sanjay Kumar S | DevOps Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-    /* Basic Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Roboto', sans-serif; background: linear-gradient(135deg, #f0f4ff, #d9e8ff); color: #333; line-height: 1.6; overflow-x: hidden; }
-    a { text-decoration: none; color: #007bff; transition: color 0.3s; }
-    a:hover { color: #0056b3; text-decoration: underline; }
-
-    .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
-
-    /* Header */
-    header { text-align: center; padding: 50px 20px; opacity: 0; transform: translateY(-50px); animation: fadeInUp 1s forwards; }
-    header h1 { font-size: 3rem; color: #0056b3; }
-    header p { font-size: 1.2rem; margin-top: 10px; }
-
-    /* Sections */
-    section { margin: 50px 0; padding: 20px; background: #fff; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); opacity: 0; transform: translateX(-50px); transition: all 0.7s ease; }
-    section h2 { font-size: 2rem; color: #0056b3; margin-bottom: 15px; border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px; }
-    ul { list-style: none; }
-    li { margin: 10px 0; transition: transform 0.3s ease; }
-    li:hover { transform: translateX(10px); }
-
-    /* Skills */
-    .skills { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
-    .skills img { width: 50px; height: 50px; opacity: 0; transform: scale(0); transition: all 0.7s ease; }
-    .skills img.visible { opacity: 1; transform: scale(1) rotate(360deg); }
-
-    /* Footer */
-    footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #555; opacity: 0; transform: translateY(50px); animation: fadeInUp 1s forwards; }
-
-    /* Animations */
-    @keyframes fadeInUp {
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes slideInLeft {
-        from { opacity: 0; transform: translateX(-100px); }
-        to { opacity: 1; transform: translateX(0); }
-    }
-    @keyframes slideInRight {
-        from { opacity: 0; transform: translateX(100px); }
-        to { opacity: 1; transform: translateX(0); }
-    }
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Roboto',sans-serif;background:linear-gradient(135deg,#f0f4ff,#d9e8ff);color:#333;line-height:1.6;overflow-x:hidden;scroll-behavior:smooth;}
+a{text-decoration:none;color:#007bff;transition:color 0.3s;}
+a:hover{text-decoration:underline;color:#0056b3;}
+.container{max-width:1000px;margin:0 auto;padding:20px;}
+header{padding:20px 0;position:sticky;top:0;background:#f0f4ff;z-index:10;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+nav{display:flex;justify-content:center;gap:20px;}
+nav a{font-weight:700;}
+main{padding-top:20px;}
+section{margin:50px 0;padding:20px;background:#fff;border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,0.1);opacity:0;transform:translateY(50px);transition:all 0.7s ease;}
+section h2{font-size:2rem;color:#0056b3;margin-bottom:15px;border-bottom:2px solid #007bff;display:inline-block;padding-bottom:5px;}
+.skills-slider{display:flex;gap:20px;overflow:hidden;white-space:nowrap;margin-top:15px;}
+.skills-slider img{height:50px;width:50px;animation:scroll 15s linear infinite;}
+.skills-slider img:nth-child(2n){animation-delay:2s;}
+.skills-slider img:nth-child(3n){animation-delay:4s;}
+@keyframes scroll{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+footer{text-align:center;padding:20px;font-size:0.9rem;color:#555;opacity:0;transform:translateY(50px);animation:fadeInUp 1s forwards;}
+@keyframes fadeInUp{to{opacity:1;transform:translateY(0);}}
 </style>
 </head>
 <body>
-<div class="container">
-    <!-- Header -->
-    <header>
-        <h1>Sanjay Kumar S</h1>
-        <p>Aspiring DevOps Engineer | Passionate about CI/CD, Cloud, and Automation</p>
-        <p>
-            <a href="mailto:sanjaykumarsk2571@gmail.com">Email</a> | 
-            <a href="https://www.linkedin.com/in/sanjaykumars25" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/sanjaygthub" target="_blank">GitHub</a>
-        </p>
-    </header>
 
-    <!-- About -->
-    <section class="animate slide-left">
-        <h2>About Me</h2>
-        <p>
-            Aspiring DevOps Engineer with hands-on knowledge of cloud platforms, CI/CD pipelines, and automation tools. 
-            Enthusiastic about deploying scalable microservices and streamlining development workflows. 
-            Always eager to learn and implement modern DevOps practices.
-        </p>
-    </section>
+<header>
+<h1 style="text-align:center;color:#0056b3;">Sanjay Kumar S</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
 
-    <!-- Skills -->
-    <section class="animate slide-right">
-        <h2>Skills</h2>
-        <div class="skills">
-            <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS">
-            <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker">
-            <img src="https://cdn.worldvectorlogo.com/logos/jenkins-1.svg" alt="Jenkins">
-            <img src="https://cdn.worldvectorlogo.com/logos/kubernetes.svg" alt="Kubernetes">
-            <img src="https://cdn.worldvectorlogo.com/logos/terraform.svg" alt="Terraform">
-            <img src="https://cdn.worldvectorlogo.com/logos/ansible.svg" alt="Ansible">
-            <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git">
-            <img src="https://cdn.worldvectorlogo.com/logos/linux-tux.svg" alt="Linux">
-            <img src="https://cdn.worldvectorlogo.com/logos/maven.svg" alt="Maven">
-        </div>
-    </section>
+<main>
+<section id="about">
+<h2>About Me</h2>
+<p>Aspiring DevOps Engineer with hands-on knowledge of cloud platforms, CI/CD pipelines, and automation tools. Enthusiastic about deploying scalable microservices and streamlining development workflows. Always eager to learn and implement modern DevOps practices.</p>
+</section>
 
-    <!-- Projects -->
-    <section class="animate slide-left">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>FinanceMe Microservice Deployment:</strong> Deployed a Spring Boot microservice on AWS using Docker, Jenkins, and Ansible with automated CI/CD pipelines.</li>
-            <li><strong>CI/CD Pipeline Automation:</strong> Built end-to-end pipelines with GitHub, Maven, and Jenkins for streamlined application deployments.</li>
-            <li><strong>Monitoring & Alerts Setup:</strong> Configured Prometheus and Grafana dashboards for real-time monitoring of microservices.</li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        &copy; 2025 Sanjay Kumar S | DevOps Portfolio
-    </footer>
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-slider">
+<img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg" alt="AWS">
+<img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker">
+<img src="https://cdn.worldvectorlogo.com/logos/jenkins-1.svg" alt="Jenkins">
+<img src="https://cdn.worldvectorlogo.com/logos/kubernetes.svg" alt="Kubernetes">
+<img src="https://cdn.worldvectorlogo.com/logos/terraform.svg" alt="Terraform">
+<img src="https://cdn.worldvectorlogo.com/logos/ansible.svg" alt="Ansible">
+<img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git">
+<img src="https://cdn.worldvectorlogo.com/logos/linux-tux.svg" alt="Linux">
+<img src="https://cdn.worldvectorlogo.com/logos/maven.svg" alt="Maven">
 </div>
+</section>
 
-<!-- Scroll Animation Script -->
+<section id="projects">
+<h2>Projects</h2>
+<ul>
+<li><a href="project-financeme.html" target="_blank">FinanceMe Microservice Deployment</a></li>
+<li><a href="project-cicd.html" target="_blank">CI/CD Pipeline Automation</a></li>
+<li><a href="project-monitoring.html" target="_blank">Monitoring & Alerts Setup</a></li>
+</ul>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:sanjaykumarsk2571@gmail.com">sanjaykumarsk2571@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/sanjaykumars25" target="_blank">Profile</a></p>
+<p>GitHub: <a href="https://github.com/sanjaygthub" target="_blank">Repo</a></p>
+</section>
+</main>
+
+<footer>&copy; 2025 Sanjay Kumar S | DevOps Portfolio</footer>
+
 <script>
-    const sections = document.querySelectorAll('.animate');
-    const skills = document.querySelectorAll('.skills img');
-
-    const observerOptions = { threshold: 0.1 };
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) {
-                // Slide sections based on direction
-                if(entry.target.classList.contains('slide-left')){
-                    entry.target.style.animation = 'slideInLeft 1s forwards';
-                } else if(entry.target.classList.contains('slide-right')){
-                    entry.target.style.animation = 'slideInRight 1s forwards';
-                } else {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    sections.forEach(section => observer.observe(section));
-
-    // Skills animation stagger
-    const skillsObserver = new IntersectionObserver((entries, obs) => {
-        entries.forEach(entry => {
-            if(entry.isIntersecting){
-                skills.forEach((skill, i) => {
-                    setTimeout(() => {
-                        skill.classList.add('visible');
-                    }, i * 150); // staggered animation
-                });
-                obs.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    skillsObserver.observe(document.querySelector('.skills'));
+const sections=document.querySelectorAll('section');
+const observer=new IntersectionObserver((entries,obs)=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.style.opacity=1;entry.target.style.transform='translateY(0)';obs.unobserve(entry.target);}
+});
+},{threshold:0.1});
+sections.forEach(section=>observer.observe(section));
 </script>
+
 </body>
 </html>
