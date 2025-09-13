@@ -1,140 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevOps Engineer Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background: #0d6efd;
-      color: white;
-      padding: 30px 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 5px;
-    }
-    section {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #0d6efd;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-    }
-    .skills span {
-      display: inline-block;
-      background: #0d6efd;
-      color: white;
-      padding: 5px 10px;
-      border-radius: 5px;
-      margin: 5px;
-      font-size: 0.9rem;
-    }
-    .projects div {
-      margin-bottom: 15px;
-      padding: 10px;
-      border-left: 4px solid #0d6efd;
-      background: #f9f9ff;
-      border-radius: 4px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      background: #0d6efd;
-      color: white;
-      margin-top: 20px;
-    }
-    a {
-      color: #0d6efd;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Kumar S | DevOps Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: linear-gradient(135deg, #f0f4ff, #d9e8ff); color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: #007bff; }
+        a:hover { text-decoration: underline; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+
+        /* Header */
+        header { text-align: center; padding: 50px 20px; }
+        header h1 { font-size: 3rem; color: #0056b3; }
+        header p { font-size: 1.2rem; margin-top: 10px; }
+
+        /* Sections */
+        section { margin: 50px 0; padding: 20px; background: #fff; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        section:hover { transform: translateY(-5px); }
+        section h2 { font-size: 2rem; color: #0056b3; margin-bottom: 15px; border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px; }
+        ul { list-style: none; }
+        li { margin: 10px 0; }
+
+        /* Skills */
+        .skills span { display: inline-block; background: #007bff; color: #fff; padding: 8px 12px; border-radius: 20px; margin: 5px 5px 0 0; font-size: 0.9rem; transition: transform 0.3s ease; }
+        .skills span:hover { transform: scale(1.1); }
+
+        /* Footer */
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #555; }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>[Your Name]</h1>
-    <p>DevOps Engineer | Cloud & Automation Enthusiast</p>
-  </header>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Sanjay Kumar S</h1>
+            <p>Aspiring DevOps Engineer | Passionate about CI/CD, Cloud, and Automation</p>
+            <p>
+                <a href="mailto:sanjaykumarsk2571@gmail.com">Email</a> | 
+                <a href="https://www.linkedin.com/in/sanjaykumars25" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/sanjaygthub" target="_blank">GitHub</a>
+            </p>
+        </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Enthusiastic DevOps Engineer with hands-on experience in CI/CD pipelines, cloud deployments, and infrastructure automation. Looking for opportunities in Tamil Nadu, Kerala, or Bangalore.</p>
-  </section>
+        <!-- About -->
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Aspiring DevOps Engineer with hands-on knowledge of cloud platforms, CI/CD pipelines, and automation tools. 
+                Enthusiastic about deploying scalable microservices and streamlining development workflows. 
+                Always eager to learn and implement modern DevOps practices.
+            </p>
+        </section>
 
-  <section class="projects">
-    <h2>Projects</h2>
-    <div>
-      <h3>FinanceMe – Spring Boot Microservice Deployment</h3>
-      <p>Built CI/CD pipeline with Jenkins, containerized app with Docker, deployed on AWS EC2 using Terraform. Configured monitoring with Prometheus & Grafana.</p>
+        <!-- Skills -->
+        <section>
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>Jenkins</span>
+                <span>Kubernetes</span>
+                <span>Terraform</span>
+                <span>Ansible</span>
+                <span>Git</span>
+                <span>Linux</span>
+                <span>Maven</span>
+                <span>Prometheus</span>
+                <span>Grafana</span>
+                <span>CI/CD</span>
+                <span>Microservices</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>FinanceMe Microservice Deployment:</strong> Deployed a Spring Boot microservice on AWS using Docker, Jenkins, and Ansible with automated CI/CD pipelines.</li>
+                <li><strong>CI/CD Pipeline Automation:</strong> Built end-to-end pipelines with GitHub, Maven, and Jenkins for streamlined application deployments.</li>
+                <li><strong>Monitoring & Alerts Setup:</strong> Configured Prometheus and Grafana dashboards for real-time monitoring of microservices.</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Sanjay Kumar S | DevOps Portfolio
+        </footer>
     </div>
-    <div>
-      <h3>Medicure – Healthcare DevOps Project</h3>
-      <p>Deployed on Kubernetes cluster with Ansible automation. CI/CD pipeline: GitHub → Jenkins → Docker → Kubernetes.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjay Kumar S | DevOps Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Roboto', sans-serif; background: linear-gradient(135deg, #f0f4ff, #d9e8ff); color: #333; line-height: 1.6; overflow-x: hidden; }
+        a { text-decoration: none; color: #007bff; transition: color 0.3s; }
+        a:hover { color: #0056b3; text-decoration: underline; }
+
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+
+        /* Header */
+        header { text-align: center; padding: 50px 20px; opacity: 0; transform: translateY(-50px); animation: fadeInUp 1s forwards 0.2s; }
+        header h1 { font-size: 3rem; color: #0056b3; }
+        header p { font-size: 1.2rem; margin-top: 10px; }
+
+        /* Sections */
+        section { margin: 50px 0; padding: 20px; background: #fff; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); opacity: 0; transform: translateY(50px); transition: transform 0.5s ease, opacity 0.5s ease; }
+        section h2 { font-size: 2rem; color: #0056b3; margin-bottom: 15px; border-bottom: 2px solid #007bff; display: inline-block; padding-bottom: 5px; }
+        ul { list-style: none; }
+        li { margin: 10px 0; transition: transform 0.3s ease; }
+        li:hover { transform: translateX(10px); }
+
+        /* Skills */
+        .skills span { display: inline-block; background: #007bff; color: #fff; padding: 8px 12px; border-radius: 20px; margin: 5px 5px 0 0; font-size: 0.9rem; transition: transform 0.3s ease, background 0.3s ease; }
+        .skills span:hover { transform: scale(1.2); background: #0056b3; }
+
+        /* Footer */
+        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #555; opacity: 0; transform: translateY(50px); animation: fadeInUp 1s forwards 0.2s; }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Sanjay Kumar S</h1>
+            <p>Aspiring DevOps Engineer | Passionate about CI/CD, Cloud, and Automation</p>
+            <p>
+                <a href="mailto:sanjaykumarsk2571@gmail.com">Email</a> | 
+                <a href="https://www.linkedin.com/in/sanjaykumars25" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/sanjaygthub" target="_blank">GitHub</a>
+            </p>
+        </header>
+
+        <!-- About -->
+        <section class="animate">
+            <h2>About Me</h2>
+            <p>
+                Aspiring DevOps Engineer with hands-on knowledge of cloud platforms, CI/CD pipelines, and automation tools. 
+                Enthusiastic about deploying scalable microservices and streamlining development workflows. 
+                Always eager to learn and implement modern DevOps practices.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section class="animate">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>Jenkins</span>
+                <span>Kubernetes</span>
+                <span>Terraform</span>
+                <span>Ansible</span>
+                <span>Git</span>
+                <span>Linux</span>
+                <span>Maven</span>
+                <span>Prometheus</span>
+                <span>Grafana</span>
+                <span>CI/CD</span>
+                <span>Microservices</span>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="animate">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>FinanceMe Microservice Deployment:</strong> Deployed a Spring Boot microservice on AWS using Docker, Jenkins, and Ansible with automated CI/CD pipelines.</li>
+                <li><strong>CI/CD Pipeline Automation:</strong> Built end-to-end pipelines with GitHub, Maven, and Jenkins for streamlined application deployments.</li>
+                <li><strong>Monitoring & Alerts Setup:</strong> Configured Prometheus and Grafana dashboards for real-time monitoring of microservices.</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 Sanjay Kumar S | DevOps Portfolio
+        </footer>
     </div>
-    <div>
-      <h3>Mini Projects</h3>
-      <ul>
-        <li>Automated Apache web server setup using Ansible on AWS EC2</li>
-        <li>Personal CI/CD pipeline for Node.js app</li>
-        <li>Reusable Terraform modules for VPC, EC2, RDS</li>
-      </ul>
-    </div>
-  </section>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <span>Git</span>
-    <span>Jenkins</span>
-    <span>Docker</span>
-    <span>Kubernetes</span>
-    <span>Ansible</span>
-    <span>Terraform</span>
-    <span>AWS</span>
-    <span>Prometheus</span>
-    <span>Grafana</span>
-    <span>Bash</span>
-    <span>Python</span>
-  </section>
+    <!-- Scroll Animation Script -->
+    <script>
+        const sections = document.querySelectorAll('.animate');
+        const options = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>DevOps Certification – StarAgile</li>
-      <li>AWS Cloud Practitioner (if applicable)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
-  </section>
-
-  <footer>
-    <p>© 2025 [Your Name] | DevOps Engineer Portfolio</p>
-  </footer>
+        sections.forEach(section => observer.observe(section));
+    </script>
 </body>
 </html>
